@@ -1,0 +1,10 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.container {
+    min-height: 800px;
+    background-color: lightgray;
+    margin: 20px;
+}
