@@ -22,10 +22,10 @@ button {
 }
 
 .container {
-    min-height: 500px;
+    height: 500px;
     background-color: lightgray;
     margin: 20px;
-    min-width: 500px;
+    width: 500px;
     display: flex;
     flex-wrap: wrap;
     border: 10px solid maroon;
@@ -38,6 +38,5 @@ button {
 
 div {
     background-color: blueviolet;
-    flex-basis: 6.25%;
 }
 
