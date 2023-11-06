@@ -4,7 +4,22 @@
 }
 
 .container {
-    min-height: 800px;
+    max-height: 200px;
+    min-height: 200px;
     background-color: lightgray;
     margin: 20px;
+    max-width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+
 }
+
+.boxOver {
+    background-color: black;
+}
+
+div {
+    background-color: blueviolet;
+    flex-basis: 6.25%;
+}
+
