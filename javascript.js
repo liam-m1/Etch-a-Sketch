@@ -14,13 +14,33 @@ for (i = 0; i < size2; i++) {
 }
 }
 
-boxSize(16);
+function boxSize2(size) {
+    let size2 = size * size;
+    let arrSize = box.length
+    for (i = 0; i < size2; i++) {
+        const newBox = document.createElement("div");
+        newBox.style.width = 500 / size + "px";
+        if (i < arrSize) {
+        container.replaceChild(newBox, box[i]);
+        }
+        else {
+        container.appendChild(newBox);
+        }
+        box[i] = newBox;
+    }
+}
 
-box.forEach(box => {
-    box.addEventListener("mouseover", () => {
-    box.setAttribute("class", "boxOver")
-    });    
-});
+function mouseEvent() {
+    box.forEach(box => {
+        box.addEventListener("mouseover", () => {
+        box.setAttribute("class", "boxOver")
+        });    
+    });
+}
+
+
+boxSize(16);
+mouseEvent();
 
 const buttonSize = document.querySelector("button");
 buttonSize.addEventListener("click", () => {
@@ -28,7 +48,9 @@ buttonSize.addEventListener("click", () => {
     box.forEach(box => {
     box.classList.remove("boxOver");
     });
-    boxSize(size);
+    boxSize2(size);
+    mouseEvent();
 });
+
 
 });
