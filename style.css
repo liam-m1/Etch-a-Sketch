@@ -3,14 +3,32 @@
     margin: 0px;
 }
 
+body {
+    display: flex;
+    min-height: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+button {
+    margin: 10px;
+    padding: 20px;
+    border-radius: 100px;
+    background-color: rgb(254, 209, 224);
+    text-align: center;
+    font-weight: 900;
+    
+}
+
 .container {
-    max-height: 200px;
-    min-height: 200px;
+    min-height: 500px;
     background-color: lightgray;
     margin: 20px;
-    max-width: 200px;
+    min-width: 500px;
     display: flex;
     flex-wrap: wrap;
+    border: 10px solid maroon;
 
 }
 
